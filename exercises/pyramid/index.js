@@ -13,7 +13,15 @@
 //       '  #  '
 //       ' ### '
 //       '#####'
+pyramid(30);
 
-function pyramid(n) {}
+function pyramid(n) {
+  let x = 1;
+  for (let i = 1; i <= n; i++) {
+    console.log(' '.repeat(n - i) + '#'.repeat(x) + ' '.repeat(n - i));
+    /* console.log('   '.repeat(n - i) + ' # '.repeat(x) + ' '.repeat(n - i)); */
+    x += 2;
+  }
+}
 
 module.exports = pyramid;
